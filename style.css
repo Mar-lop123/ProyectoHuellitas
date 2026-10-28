@@ -688,3 +688,189 @@ footer p {
         height: 210px;
     }
 }
+
+/* PORTADA DE SALUD */
+.portada-salud,
+.aviso-salud {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(135deg, #f5e7d7, #fffaf4);
+}
+
+.portada-salud > div,
+.aviso-salud > div {
+    flex: 1;
+}
+
+.portada-salud h1 {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.portada-salud img {
+    width: 38%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 25px 60px;
+    box-shadow: 0 10px 25px rgba(81, 65, 54, 0.15);
+}
+
+/* INTRODUCCIÓN */
+.introduccion-salud {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+/* SECCIÓN DE CONSEJOS */
+.seccion-salud {
+    background-color: #f5e7d7;
+    border-radius: 30px;
+    margin: 20px 4%;
+}
+
+.seccion-salud > .titulo,
+.seccion-salud > .descripcion,
+.seccion-salud > .subtitulo {
+    text-align: center;
+}
+
+/* TARJETAS */
+.tarjetas-salud {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.consejo-salud {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px;
+    background-color: white;
+    border: 1px solid #eee2d5;
+    border-radius: 22px;
+    box-shadow: 0 5px 15px rgba(81, 65, 54, 0.06);
+    transition: 0.3s;
+}
+
+.consejo-salud:hover {
+    background-color: #fffaf4;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(81, 65, 54, 0.12);
+}
+
+.consejo-salud img {
+    width: 115px;
+    height: 115px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.contenido-salud {
+    padding: 5px;
+}
+
+.contenido-salud h3 {
+    color: #a75f47;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contenido-salud p {
+    color: #786f67;
+    font-size: 14px;
+}
+
+/* NÚMEROS DE LAS TARJETAS */
+.tarjetas-salud .numero-consejo {
+    display: inline-block;
+    color: #a75f47;
+    background-color: #f5e7d7;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* TARJETA FINAL */
+.tarjeta-final-salud {
+    background-color: #bd795e;
+    justify-content: center;
+}
+
+.tarjeta-final-salud h3,
+.tarjeta-final-salud p {
+    color: white;
+}
+
+.icono-salud {
+    font-size: 38px;
+}
+
+/* AVISO FINAL */
+.aviso-salud {
+    background-color: #fffaf4;
+    border-radius: 25px;
+}
+
+.aviso-salud h2 {
+    color: #a75f47;
+}
+
+.aviso-salud img {
+    width: 35%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* BOTÓN PARA REGRESAR */
+.regresar-salud {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* TABLETAS */
+@media screen and (max-width: 900px) {
+    .tarjetas-salud {
+        grid-template-columns: 1fr;
+    }
+
+    .portada-salud h1 {
+        font-size: 34px;
+    }
+}
+
+/* CELULARES */
+@media screen and (max-width: 600px) {
+    .portada-salud,
+    .aviso-salud {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portada-salud img,
+    .aviso-salud img {
+        width: 90%;
+        height: 220px;
+    }
+
+    .seccion-salud {
+        margin: 10px 3%;
+        border-radius: 22px;
+    }
+
+    .consejo-salud {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .consejo-salud img {
+        width: 90px;
+        height: 100px;
+    }
+}
