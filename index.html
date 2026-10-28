@@ -123,6 +123,50 @@
             </div>
         </div>
     </section>
+
+    <section id="formulario">
+
+        <h2>Cuéntanos sobre tu mascota 🐾</h2>
+
+        <form id="formulario-mascota">
+
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="mascota">Nombre de tu mascota:</label>
+            <input type="text" id="mascota" required>
+
+            <label for="tipo">Tipo de mascota:</label>
+            <select id="tipo" required>
+                <option value="">Selecciona una opción</option>
+                <option>Perro</option>
+                <option>Gato</option>
+                <option>Otro</option>
+            </select>
+
+            <label for="edad">Edad de tu mascota:</label>
+            <input type="number" id="edad" min="0" required>
+
+            <label for="correo">Tu correo electrónico:</label>
+            <input type="email" id="correo" required>
+
+            <label for="cuidados">¿Qué cuidados te interesan?</label>
+            <select id="cuidados" required>
+                <option value="">Selecciona una opción</option>
+                <option>Alimentación</option>
+                <option>Higiene</option>
+                <option>Salud</option>
+                <option>Bienestar</option>
+            </select>
+            <label for="comentarios">Déjanos tus comentarios:</label>
+            <textarea id="comentarios" rows="4"
+                placeholder="Escribe tu comentario"></textarea>
+
+            <button type="submit">Enviar</button>
+            <p id="mensaje"></p>
+        </form>
+
+    </section>
     <footer>
         <p>
             El amor por tu mascota también se demuestra cuidándola 🐾

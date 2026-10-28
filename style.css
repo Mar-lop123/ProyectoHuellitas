@@ -183,8 +183,6 @@ nav a:hover {
     color: #786f67;
     margin-bottom: 20px;
 }
-
-/* SECCIONES DE LAS OTRAS PÁGINAS */
 section:not(#inicio):not(#informacion) {
     padding: 50px 8%;
 }
@@ -212,8 +210,6 @@ section ul {
 section li {
     margin-bottom: 10px;
 }
-
-/* AVISOS */
 .aviso {
     background-color: #f5e7d7;
     border-left: 5px solid #bd795e;
@@ -222,7 +218,6 @@ section li {
     margin: 25px 0;
 }
 
-/* LISTA DE CUIDADOS */
 .lista-cuidados {
     background-color: #ffffff;
     padding: 25px;
@@ -231,8 +226,6 @@ section li {
     margin: 20px 0;
     box-shadow: 0 5px 15px rgba(81, 65, 54, 0.05);
 }
-
-/* BOTÓN PARA VOLVER */
 .volver {
     display: inline-block;
     margin-top: 20px;
@@ -255,7 +248,67 @@ footer {
     padding: 30px 20px;
     margin-top: 0;
 }
+#formulario {
+    background-color: #f5e7d7;
+    padding: 40px 20px;
+}
 
+#formulario h2 {
+    text-align: center;
+    color: #514136;
+    margin-bottom: 25px;
+}
+
+#formulario-mascota {
+    background-color: #fffaf4;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+#formulario-mascota label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#formulario-mascota input,
+#formulario-mascota select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddc8b5;
+    border-radius: 8px;
+}
+
+#formulario-mascota button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #bd795e;
+    color: white;
+    cursor: pointer;
+}
+
+#formulario-mascota button:hover {
+    background-color: #514136;
+}
+#formulario-mascota textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddc8b5;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: vertical;
+}
+#mensaje {
+    text-align: center;
+    margin-top: 15px;
+    color: #58734c;
+}
 footer p {
     margin: 0;
 }
