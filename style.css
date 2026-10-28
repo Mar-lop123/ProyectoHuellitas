@@ -407,3 +407,144 @@ footer p {
         font-size: 30px;
     }
 }
+.portada-alimentacion {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background: linear-gradient(135deg, #f5e7d7, #fffaf4);
+}
+
+.portada-alimentacion > div,
+.aviso-alimentacion > div {
+    flex: 1;
+}
+
+.portada-alimentacion img {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px 60px;
+}
+
+.introduccion-alimentacion {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.seccion-alimentacion {
+    background-color: #fffaf4;
+}
+
+.seccion-alimentacion > .titulo,
+.seccion-alimentacion > .descripcion {
+    text-align: center;
+}
+
+.tarjetas-alimentacion {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.consejo-alimentacion {
+    background-color: white;
+    border: 1px solid #eee2d5;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(81, 65, 54, 0.08);
+    transition: 0.3s;
+}
+
+.consejo-alimentacion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(81, 65, 54, 0.13);
+}
+
+.consejo-alimentacion img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.contenido-consejo {
+    padding: 20px;
+}
+
+.numero-consejo {
+    color: #a75f47;
+    background-color: #f5e7d7;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.consejo-alimentacion h3 {
+    color: #a75f47;
+    font-size: 18px;
+    margin: 12px 0 8px;
+}
+
+.consejo-alimentacion p {
+    color: #786f67;
+    font-size: 14px;
+}
+
+.tarjeta-final {
+    background-color: #f5e7d7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.icono-final {
+    font-size: 45px;
+}
+
+.aviso-alimentacion {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #f5e7d7;
+}
+
+.aviso-alimentacion img {
+    width: 35%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.regresar-alimentacion {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .tarjetas-alimentacion {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portada-alimentacion,
+    .aviso-alimentacion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portada-alimentacion img,
+    .aviso-alimentacion img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .tarjetas-alimentacion {
+        grid-template-columns: 1fr;
+    }
+}
