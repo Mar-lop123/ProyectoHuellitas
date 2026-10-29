@@ -7,6 +7,7 @@
     <title>Huellitas</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h2>🐾 Huellitas</h2>
@@ -22,16 +23,20 @@
     <section id="inicio">
 
         <div class="inicio-texto">
+
             <p class="subtitulo">CUIDA - AMA - HAZLOS FELICES</p>
+
             <h1>¡Cuida a tu<br>mejor amigo!</h1>
+
             <p>
                 Aprende cómo cuidar a tu mascota para que tenga
                 una vida saludable, feliz y llena de cariño.
             </p>
+
         </div>
+
         <div class="inicio-imagen">
-            <img src="img/img1PG.jpg"
-                 alt="Un perro y un gato descansando juntos">
+            <img src="img/img1PG.jpg">
         </div>
 
     </section>
@@ -51,13 +56,14 @@
             Con pequeños cuidados diarios puedes mejorar
             su calidad de vida.
         </p>
+
         <div class="productos">
             <div class="tarjeta">
 
-                <img src="img/alimentacion.jpg"
-                     alt="Perro comiendo su alimento">
+                <img src="img/alimentacion.jpg">
 
                 <div class="tarjeta-contenido">
+
                     <h3>Alimentación</h3>
 
                     <p>
@@ -68,59 +74,74 @@
                     <a href="alimentacion.html" class="boton">
                         Ver más
                     </a>
+
                 </div>
+
             </div>
             <div class="tarjeta">
-                <img src="img/Hijiene.jpg"
-                     alt="Mascota recibiendo cuidados de higiene">
+
+                <img src="img/Hijiene.jpg">
 
                 <div class="tarjeta-contenido">
+
                     <h3>Higiene</h3>
+
                     <p>
                         Aprende a mantener limpia a tu mascota
                         y el espacio donde vive.
                     </p>
+
                     <a href="higiene.html" class="boton">
                         Ver más
                     </a>
+
                 </div>
+
             </div>
             <div class="tarjeta">
 
-                <img src="img/Salud.jpg"
-                     alt="Veterinario revisando a un perro">
+                <img src="img/Salud.jpg">
 
                 <div class="tarjeta-contenido">
+
                     <h3>Salud</h3>
+
                     <p>
                         Descubre la importancia de las vacunas
                         y las visitas al veterinario.
                     </p>
+
                     <a href="salud.html" class="boton">
                         Ver más
                     </a>
+
                 </div>
 
             </div>
             <div class="tarjeta">
-                <img src="img/bienesatar.jpg"
-                     alt="Perro y gato descansando juntos">
+
+                <img src="img/bienesatar.jpg">
 
                 <div class="tarjeta-contenido">
+
                     <h3>Bienestar</h3>
 
                     <p>
                         Aprende cómo mantener a tu mascota
                         activa, segura y feliz.
                     </p>
+
                     <a href="bienestar.html" class="boton">
                         Ver más
                     </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
     <section id="formulario">
 
         <h2>Cuéntanos sobre tu mascota 🐾</h2>
@@ -128,47 +149,58 @@
         <form id="formulario-mascota">
 
             <label for="nombre">Tu nombre:</label>
-            <input type="text" id="nombre" required>
+            <input type="text" id="nombre" name="nombre" required>
 
             <label for="mascota">Nombre de tu mascota:</label>
-            <input type="text" id="mascota" required>
+            <input type="text" id="mascota" name="mascota" required>
 
             <label for="tipo">Tipo de mascota:</label>
-            <select id="tipo" required>
+
+            <select id="tipo" name="tipo" required>
                 <option value="">Selecciona una opción</option>
-                <option>Perro</option>
-                <option>Gato</option>
-                <option>Otro</option>
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Otro">Otro</option>
             </select>
 
             <label for="edad">Edad de tu mascota:</label>
-            <input type="number" id="edad" min="0" required>
+            <input type="number" id="edad" name="edad" min="0" required>
 
             <label for="correo">Tu correo electrónico:</label>
-            <input type="email" id="correo" required>
+            <input type="email" id="correo" name="correo" required>
 
             <label for="cuidados">¿Qué cuidados te interesan?</label>
-            <select id="cuidados" required>
+
+            <select id="cuidados" name="cuidados" required>
                 <option value="">Selecciona una opción</option>
-                <option>Alimentación</option>
-                <option>Higiene</option>
-                <option>Salud</option>
-                <option>Bienestar</option>
+                <option value="Alimentación">Alimentación</option>
+                <option value="Higiene">Higiene</option>
+                <option value="Salud">Salud</option>
+                <option value="Bienestar">Bienestar</option>
             </select>
+
             <label for="comentarios">Déjanos tus comentarios:</label>
-            <textarea id="comentarios" rows="4"
-                placeholder="Escribe tu comentario"></textarea>
+
+            <textarea id="comentarios"
+                      name="comentarios"
+                      rows="4"
+                      placeholder="Escribe tu comentario"></textarea>
 
             <button type="submit">Enviar</button>
+
             <p id="mensaje"></p>
+
         </form>
 
     </section>
+
     <footer>
         <p>
             El amor por tu mascota también se demuestra cuidándola 🐾
         </p>
     </footer>
+
     <script src="script.js"></script>
+
 </body>
 </html>
