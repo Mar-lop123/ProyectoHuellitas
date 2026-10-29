@@ -784,8 +784,6 @@ footer p {
     color: #786f67;
     font-size: 14px;
 }
-
-/* NÚMEROS DE LAS TARJETAS */
 .tarjetas-salud .numero-consejo {
     display: inline-block;
     color: #a75f47;
@@ -795,13 +793,10 @@ footer p {
     font-size: 12px;
     font-weight: bold;
 }
-
-/* TARJETA FINAL */
 .tarjeta-final-salud {
     background-color: #bd795e;
     justify-content: center;
 }
-
 .tarjeta-final-salud h3,
 .tarjeta-final-salud p {
     color: white;
@@ -810,8 +805,6 @@ footer p {
 .icono-salud {
     font-size: 38px;
 }
-
-/* AVISO FINAL */
 .aviso-salud {
     background-color: #fffaf4;
     border-radius: 25px;
@@ -828,13 +821,10 @@ footer p {
     border-radius: 20px;
 }
 
-/* BOTÓN PARA REGRESAR */
 .regresar-salud {
     text-align: center;
     padding: 30px 20px;
 }
-
-/* TABLETAS */
 @media screen and (max-width: 900px) {
     .tarjetas-salud {
         grid-template-columns: 1fr;
@@ -844,8 +834,6 @@ footer p {
         font-size: 34px;
     }
 }
-
-/* CELULARES */
 @media screen and (max-width: 600px) {
     .portada-salud,
     .aviso-salud {
